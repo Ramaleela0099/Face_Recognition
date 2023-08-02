@@ -4,7 +4,7 @@ import face_recognition
 input_movie = cv2.VideoCapture('0')
 length = int(input_movie.get(cv2.CAP_PROP_FRAME_COUNT))
 
-image = face_recognition.load_image_file('../face_detection/resources/samplephoto.jpeg')
+image = face_recognition.load_image_file('#give your sample photo')
 face_encoding = face_recognition.face_encodings(image)[0]
 
 known_faces = [
@@ -40,7 +40,7 @@ while True:
 
         name = None
         if match[0]:
-            name = "Aditya"
+            name = "#Give Your Name"
         face_names.append(name)
 
 
